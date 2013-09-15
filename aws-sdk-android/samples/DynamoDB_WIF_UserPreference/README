@@ -1,0 +1,23 @@
+Running the UserPreference Sample
+============================================
+This sample demonstrates how Android can interact with Amazon DynamoDB to store user preferences. For a detailed description of the code, open and read the UserPreference.html file.
+
+1. Import the project into Eclipse 
+   * Go to File -> Import.  Import Wizard will open.
+   * Select General -> Existing Projects into Workspace.  Click Next.
+   * In Select root directory, browse to samples directory.  List of all samples projects will appear.
+   * Select the projects you want to import
+   * Click Finish.
+
+2. Update your App configuration:
+   * Open the Strings.xml file located in res/values
+   * If using embedded credentials(AWS access key and secret key), change those fields in AwsCredentials.properties and skip to Step 3
+   * Edit the file and provide the following for each WIF provider:
+     + "fb_app_id", "app_id" and "fb_role_arn" if using Facebook
+     + "google_client_id" and "google_role_arn" if using Google+
+     + "amzn_api_key" and "amzn_role_arn" if using Login With Amazon
+
+3. Run the project:
+   * Go to Project ->  Clean.
+   * Go to Project ->  Build All.
+   * Go to Run -> Run.
